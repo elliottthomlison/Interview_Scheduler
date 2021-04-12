@@ -19,6 +19,8 @@ export default function DayList(props) {
   )
 }
 
+<DayList days={days} day={day} setDay={setDay} />
+
 // Our DayList component will take in three props.
 
 // days:Array a list of day objects (each object includes an id, name, and spots)

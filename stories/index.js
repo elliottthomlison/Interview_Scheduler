@@ -103,8 +103,10 @@ storiesOf("DayList", module)
     ));
 
   storiesOf("Appointment", module)
-  .addParameters({
-    backgrounds: [{ name: "white", value: "#fff", default: true }]
-  })
-  .add("Appointment", () => <Appointment />)
-  .add("Appointment with Time", () => <Appointment time="12pm" />);
+    .addParameters({
+      backgrounds: [{ name: "white", value: "#fff", default: true }]
+    })
+    .add("Appointment", () => <Appointment />)
+    .add("Appointment with Time", () => <Appointment time="12pm" />)
+    .add("Header", () => <Header time="12pm" />)
+    .add("Empty", () => <Empty onAdd={action("onAdd")} />)

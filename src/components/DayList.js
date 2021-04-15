@@ -1,29 +1,20 @@
 import React from "react";
-import classnames from "classnames";
-import "components/InterviewerListItem.scss";
 
-export default function InterviewerListItem(props) {
+import DayListItem from "components/DayListItem";
 
-  const interviewer = classnames("day-interviewers__item", {
-    "interviewers__item--selected": props.selected
-  })
-
+export default function DayList(props) {
+  // Build an array of day list items and render
   return (
-    <li className={interviewer} onClick={() => props.setInterviewer(props.name)}>
-    <img
-      className="interviewers__item-image"
-      src={props.avatar}
-      alt={props.name}
-    />
-    {props.selected ? props.name : ''}
-  </li>
+    <ul>
+      {props.days.map(day => (
+        <DayListItem
+          key={day.id}
+          name={day.name}
+          spots={day.spots}
+          selected={props.day === day.name}
+          setDay={props.setDay}
+        />
+      ))}
+    </ul>
   );
 }
-
-{/* <DayList days={days} day={day} setDay={setDay} /> */}
-
-// Our DayList component will take in three props.
-
-// days:Array a list of day objects (each object includes an id, name, and spots)
-// day:String the currently selected day
-// setDay:Function accepts the name of the day eg. "Monday", "Tuesday"

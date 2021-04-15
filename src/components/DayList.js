@@ -1,25 +1,26 @@
 import React from "react";
-import DayListItem from "components/DayListItem";
+import classnames from "classnames";
+import "components/InterviewerListItem.scss";
 
+export default function InterviewerListItem(props) {
 
-export default function DayList(props) {
-  const days = props.days.map(day => {
-    return (
-      <DayListItem 
-        key={day.name}
-        name={day.name} 
-        spots={day.spots} 
-        selected={day.name === props.selectedDay}
-        setDay={props.setDay}  
-      />
-    )
-  }) 
+  const interviewer = classnames("day-interviewers__item", {
+    "interviewers__item--selected": props.selected
+  })
+
   return (
-    <ul>{days}</ul>
-  )
+    <li className={interviewer} onClick={() => props.setInterviewer(props.name)}>
+    <img
+      className="interviewers__item-image"
+      src={props.avatar}
+      alt={props.name}
+    />
+    {props.selected ? props.name : ''}
+  </li>
+  );
 }
 
-<DayList days={days} day={day} setDay={setDay} />
+{/* <DayList days={days} day={day} setDay={setDay} /> */}
 
 // Our DayList component will take in three props.
 

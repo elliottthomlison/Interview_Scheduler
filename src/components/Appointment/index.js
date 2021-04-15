@@ -26,7 +26,6 @@ export default function Appointment(props) {
     props.interview ? SHOW : EMPTY
   );
 
-
   function save(name, interviewer) {
     if(!interviewer){
       alert("Please select an interviewer");
@@ -45,7 +44,6 @@ export default function Appointment(props) {
       .catch(error => transition(ERROR_SAVE, true));
     }
   }
-
   
   function deleteAppointment(event) {
 
@@ -55,8 +53,6 @@ export default function Appointment(props) {
       .then(() => transition(EMPTY))
       .catch(() => transition(ERROR_DELETE, true));
   }
-
-
 
   return (
     <div data-testid="appointment" >

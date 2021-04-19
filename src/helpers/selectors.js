@@ -18,7 +18,6 @@ export function getAppointmentsForDay(state, day) {
   return appointments;
 }
 
-
 export function getInterview(state, interview) {
 
   if (interview === null) return null;

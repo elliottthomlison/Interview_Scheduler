@@ -21,11 +21,13 @@ const ERROR_SAVE = "ERROR_SAVE";
 const ERROR_DELETE = "ERROR_DELETE";
 
 export default function Appointment(props) {
-
+  // Custom hook to handle the visual modes of <Appointment> component
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );
 
+  // Handles the visual modes and calls the function to book interview
+  // Passed as prop into <Form> components
   function save(name, interviewer) {
     if(!interviewer){
       alert("Please select an interviewer");

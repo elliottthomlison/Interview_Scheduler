@@ -65,7 +65,3 @@ const {
     </main>
   );
 }
-
-  const appointmentsForDay = getAppointmentsForDay(state, state.day);
-  const interviewersForDay = getInterviewersForDay(state, state.day);
-

@@ -24,16 +24,18 @@ export default function useVisualMode(initial) {
 
   // Handles going back to the previous visual mode
   // Won't go back further if current visual mode is the only one in history
-  const back = () => {
-    setHistory(history => {
-      const newHistory =
-        history.length > 1 ? [...history].slice(0, -1) : [...history];
-        
-      setMode(newHistory[newHistory.length - 1]);
+  const back = function() {
+    setHistory((history) => {
+      if(history.length === 1) {
+        return history;
+      }
+      const newHistory = [...history];
+      newHistory.pop();
+      setMode(newHistory[newHistory.length-1]); 
       return newHistory;
     });
   };
-
+  
   // Returns state and functions to be used in Appointment/index.js
   return { mode, transition, back };
 }

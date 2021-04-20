@@ -32,7 +32,6 @@ export function getInterview(state, interview) {
   return interviewData;
 };
 
-
 export function getInterviewersForDay(state, day) {
   const selectedDay = state.days.find(d => d.name === day);
   if(selectedDay === undefined || state.days.length === 0) return [];

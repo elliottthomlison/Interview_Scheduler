@@ -19,6 +19,18 @@ import Status from "components/Appointment/Status";
 import Error from "components/Appointment/Error";
 import Form from "components/Appointment/Form";
 
+// As part of our Edit story, the Form component should take the following props:
+  // name:String
+  // interviewers:Array
+  // interviewer:Number
+  // onSave:Function
+  // onCancel:Function
+
+  // As part of our Create story, the Form component should take the following props:
+    // interviewers:Array
+    // onSave:Function
+    // onCancel:Function
+
 storiesOf("Button", module)
   .addParameters({
     backgrounds: [{ name: "dark", value: "#222f3e", default: true }]
@@ -165,18 +177,3 @@ storiesOf("Button", module)
             <Appointment id="last" time="1pm" />
           </Fragment>
         ))
-
-//         As part of our Edit story, the Form component should take the following props:
-
-// name:String
-// interviewers:Array
-// interviewer:Number
-// onSave:Function
-// onCancel:Function
-
-
-  // As part of our Create story, the Form component should take the following props:
-
-  // interviewers:Array
-  // onSave:Function
-  // onCancel:Function

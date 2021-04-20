@@ -28,17 +28,12 @@ export default function useVisualMode(initial) {
     setHistory(history => {
       const newHistory =
         history.length > 1 ? [...history].slice(0, -1) : [...history];
-
+        
       setMode(newHistory[newHistory.length - 1]);
-
       return newHistory;
     });
   };
 
   // Returns state and functions to be used in Appointment/index.js
-  return {
-    mode,
-    transition,
-    back
-  };
+  return { mode, transition, back };
 }

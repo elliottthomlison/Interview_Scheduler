@@ -7,7 +7,6 @@ An app made for educational purposes to learn React.
 
 The Interview Scheduler app allows the user to book, cancel, edit, and delete appointments. The user can select interview time slots and select the interviewer of their choosing.  
 
-
 ## Screenshots
  
  ### Main Screen

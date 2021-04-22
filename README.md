@@ -10,16 +10,16 @@ The Interview Scheduler app allows the user to book, cancel, edit, and delete ap
 ## Screenshots
  
  ### Main Screen
-!["Screenshot of tweeter main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/MainScreen.png?raw=true)
+!["Screenshot of scheduler main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/MainScreen.png?raw=true)
 
 ### Create new appointment
-!["Screenshot of tweeter main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/CreateNewInterview.png?raw=true)
+!["Screenshot of scheduler main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/CreateNewInterview.png?raw=true)
 
 ### Delete appointment
-!["Screenshot of tweeter main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/DeleteAppt.png?raw=true)
+!["Screenshot of scheduler main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/DeleteAppt.png?raw=true)
 
 ### Hover over appointment
-!["Screenshot of tweeter main"](https://github.com/loloffs/interview-scheduler/blob/master/public/images/InterviewHover.png?raw=true)
+!["Screenshot of scheduler main"](https://github.com/elliottthomlison/interview-scheduler/blob/master/public/images/InterviewHover.png?raw=true)
 
 ## Setup
 

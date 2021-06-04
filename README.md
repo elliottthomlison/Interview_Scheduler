@@ -3,10 +3,10 @@ Interview Scheduler is a React application that allows users to book and cancel 
 
 ## Screenshots
  
-!["Screenshot of scheduler main"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/MainScreen.png?raw=true)
-!["Screenshot of scheduler main"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/CreateNewInterview.png?raw=true)
-!["Screenshot of scheduler main"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/DeleteAppt.png?raw=true)
-!["Screenshot of scheduler main"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/InterviewHover.png?raw=true)
+!["Screenshot of scheduler"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/MainScreen.png?raw=true)
+!["Screenshot of scheduler"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/CreateNewInterview.png?raw=true)
+!["Screenshot of scheduler"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/DeleteAppt.png?raw=true)
+!["Screenshot of scheduler"](https://github.com/elliottthomlison/scheduler/blob/master/public/images/InterviewHover.png?raw=true)
 
 ## Setup
 
